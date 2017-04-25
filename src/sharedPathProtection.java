@@ -482,14 +482,14 @@ public class sharedPathProtection {
 		
 		for (i=0;i<backupPathReserve.length;++i){
 			for(j=0;j<numOfBackups;++j){
-				if(backupPathReserve[i][j]> -1 ){
+				if(backupPathReserve[i][j]==numberOfRequests ){
 					calcBkpWavelengths(i);
 		//			calcSharedWavelengths(i);
 				}
 			}
 		}
 		for (i=0;i<primaryPathReserve.length;++i){
-				if(primaryPathReserve[i]> -1){
+				if(primaryPathReserve[i]==numberOfRequests){
 					calcPrimaryWavelengths(i);
 				}
 			}
